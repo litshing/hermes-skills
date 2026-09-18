@@ -1,0 +1,37 @@
+# Allowlist — one `category/skill-name` per line. Only these get published.
+# Keep this list SHORT and deliberate: everything here goes public/into the repo.
+
+# --- publishing now ---
+devops/tailscale-headless-recovery
+
+# ---------------------------------------------------------------------------
+# Candidate skills (commented out — uncomment only after reviewing for
+# personal/employer/private info). Do NOT bulk-enable.
+#
+# devops/hermes-cron-ops              # check for leaked API keys first
+# devops/llm-provider-migration
+# devops/macos-lan-webapps
+# apple/macos-disk-cleanup
+# software-development/local-web-apps
+# software-development/flask-apps
+# software-development/sdd-task-review
+# media/voice-translation-apps
+# mlops/local-voice-translation
+# mlops/sherpa-onnx-asr
+# research/antique-appraisal
+# research/antique-research
+# research/antique-valuation
+# research/resale-value-research
+# research/crypto-token-verification
+# productivity/property-site-measurement
+# social-media/social-media-downloads
+# creative/ai-video-prompt-packs
+# scheduled-market-briefings
+#
+# ---------------------------------------------------------------------------
+# NEVER publish without heavy review — contain employer/internal details:
+#   devops/device-fleet-monitoring
+#   devops/device-telemetry-monitoring
+#   devops/remote-fleet-monitoring
+#   monitoring/remote-equipment-monitoring
+# ---------------------------------------------------------------------------

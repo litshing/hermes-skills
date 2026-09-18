@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+._*
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# logs / transient
+*.log
+*.log.*
+*.tmp
+*~
+
+# secrets — belt and braces; sync.sh also hard-gates on these
+.env
+.env.*
+*.key
+*.pem
+*.p12
+credentials*
+secrets*
