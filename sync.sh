@@ -121,7 +121,15 @@ if [ "$NOPUSH" = 1 ]; then
 fi
 
 if git remote get-url origin >/dev/null 2>&1; then
-  git push -q origin HEAD && echo "✓ pushed to origin" || { echo "❌ push failed"; exit 1; }
+  if git push -q origin HEAD; then
+    echo "✓ pushed to origin"
+  else
+    echo "❌ push failed"
+    echo "   hint: 'could not read Username for https://github.com' = no git credential"
+    echo "   helper in a non-interactive shell. Fix once, then re-run:"
+    echo "     gh auth setup-git && git push origin HEAD"
+    exit 1
+  fi
 else
   echo "⚠️  no 'origin' remote yet — create the GitHub repo, then:"
   echo "     git -C \"$REPO\" remote add origin git@github.com:<you>/hermes-skills.git"
