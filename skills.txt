@@ -3,6 +3,10 @@
 
 # --- publishing now ---
 devops/tailscale-headless-recovery
+# added 2026-09-18: jev context-engine work (leakage-reviewed: 0 secret-shaped,
+# 0 personal/employer identifiers; only absolute ~/.hermes paths in one test docstring)
+devops/hermes-context-engines
+devops/hermes-plugin-development
 
 # ---------------------------------------------------------------------------
 # Candidate skills (commented out — uncomment only after reviewing for
